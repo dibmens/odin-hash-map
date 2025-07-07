@@ -1,16 +1,13 @@
 import HashMap from "./hash-map.js" ;
 
- const test = new HashMap();
+ const fruits = new HashMap();
 
- test.set('apple', 'red')
- test.set('banana', 'yellow')
- test.set('carrot', 'orange')
- test.set('dog', 'brown')
- test.set('elephant', 'gray')
- test.set('frog', 'green')
- test.set('grape', 'purple')
- test.set('hat', 'black')
- test.set('ice cream', 'white')
- test.set('jacket', 'blue')
- test.set('kite', 'pink')
- test.set('lion', 'golden')
+ fruits.set('apple', 'red')
+//  fruits.set('apple', 'green')
+//  fruits.set('carrot', 'orange')
+//  fruits.set('blueberries','blue')
+//  fruits.set('mango','green')
+
+ console.log(fruits.keys())
+ console.log(fruits.remove('apple'))
+ console.log(fruits.keys())
