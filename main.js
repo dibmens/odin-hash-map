@@ -1,13 +1,28 @@
-import HashMap from "./hash-map.js" ;
+import HashMap from "./hash-map.js";
 
- const fruits = new HashMap();
+const test = new HashMap();
 
- fruits.set('apple', 'red')
-//  fruits.set('apple', 'green')
-//  fruits.set('carrot', 'orange')
-//  fruits.set('blueberries','blue')
-//  fruits.set('mango','green')
+test.set("apple", "red");
+test.set("banana", "yellow");
+test.set("carrot", "orange");
+test.set("dog", "brown");
+test.set("elephant", "gray");
+test.set("frog", "green");
+test.set("grape", "purple");
+test.set("hat", "black");
+test.set("ice cream", "white");
+test.set("jacket", "blue");
+test.set("kite", "pink");
+test.set("lion", "golden");
+test.set('moon', 'silver')
 
- console.log(fruits.keys())
- console.log(fruits.remove('apple'))
- console.log(fruits.keys())
+
+// test.clear();
+test.remove('elephant')
+test.set('kite','neon')
+
+// console.log(test.has('moon'))
+// console.log(test.values())
+console.log(test.length());
+console.log(test.capacity);
+console.log(test.entries())
